@@ -1,60 +1,33 @@
-import React, {Component} from 'react'
+import React from 'react'
 import './App.css';
 import Header from './components/Header';
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 import Content1 from './components/Content1';
 import Content2 from './components/Content2';
-import Footer from './components/Footer';
 import Myr from './components/Myr';
 import Myr2 from './components/Myr2';
 import ImgUpload from './components/ImgUpload';
+import ImgUpload2 from './components/ImgUpload2';
+import {Routes, Route, BrowserRouter} from 'react-router-dom';
 
-class App extends Component {
-  constructor(props){
-    super(props);
-    this.state={
-      mode: 'home'
-    }
-  }
-  render() {
-    var _home = null;
-    if(this.state.mode === 'home'){
-      _home = <div>
-        <Content1 onChangeMode={function(_mode){
-          this.setState({
-            mode: _mode
-          })
-        }.bind(this)}></Content1>
-        <Content2></Content2>
-      </div>
-    }
-    else if(this.state.mode === 'imgupload'){
-      _home = <div>
-        <ImgUpload></ImgUpload>
-      </div>
-    }
-    else if(this.state.mode === 'myr'){
-      _home = <Myr></Myr>
-    }
-    else if(this.state.mode === 'recipe'){
-      _home = <Myr2></Myr2>
-    }
-    return(
+function App() {
+  return(
+    <BrowserRouter>
       <div className='App'>
         <Header></Header>
-
-        <Nav onChangeMode={function(_mode){
-          this.setState({
-            mode: _mode
-          });
-        }.bind(this)}></Nav>
-
-        {_home}
-
+        <Nav></Nav>
+        <Routes>
+          <Route path='/' element={<><Content1></Content1><Content2></Content2></>}></Route>
+          <Route path='/myr' element={<Myr></Myr>}></Route>
+          <Route path='/myr2' element={<Myr2></Myr2>}></Route>
+          <Route path='/img' element={<ImgUpload></ImgUpload>}></Route>
+          <Route path='/img2' element={<ImgUpload2></ImgUpload2>}></Route>
+        </Routes>
         <Footer></Footer>
       </div>
-    );
-  }
+    </BrowserRouter>
+  );
 }
 
 export default App;
