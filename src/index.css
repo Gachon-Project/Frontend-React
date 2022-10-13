@@ -55,6 +55,7 @@
     background-color: #F1F1F1;
     border-radius: 5px;
 }
+/*---------------- Header 끝 ----------------*/
 
 
 /*---------------- Nav 영역 ----------------*/
@@ -95,6 +96,62 @@
     background-color: #F1F1F1;
     border-radius: 5px;
 }
+/*---------------- Nav 끝 ----------------*/
+
+
+/*---------------- Footer 영역 ----------------*/
+#footerType {
+    height: 400px;
+    background-color: #F2F2F2;
+    border-top: 2px solid #BCBABA;
+}
+  
+.footer__inner {
+    width: 260px;
+    margin: 0 auto;
+    padding: 100px 20px 64px 20px;
+}
+  
+.footer__imglogo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+    
+.footer__image.img1 {
+        background: url(./image/youtube.png) no-repeat center / cover;
+}
+.footer__image.img2 {
+        background: url(./image/twitter.png) no-repeat center / cover;
+}
+.footer__image.img3 {
+        background: url(./image/instargram.png) no-repeat center / cover;
+}
+    
+.footer__image {
+    width: 64px;
+    height: 64px;
+    color: #fff;
+    border-radius: 50px;
+}
+    
+.footer__about {
+    text-align: center;
+}
+    
+.famous_saying {
+    margin-top: 60px;
+}
+    
+.team_name {
+    margin: 20px 0;
+}
+    
+.copy {
+    font-size: 11px;
+}
+/*---------------- Footer 끝 ----------------*/
+
 
 /*---------------- Content1 영역 ----------------*/
 .slider {
@@ -144,10 +201,10 @@
     display: inline-block;
     color: white;
 }
+/*---------------- Content1 끝 ----------------*/
+
 
 /*---------------- Content2 영역 ----------------*/
-
-/* common */
 .container {
     width: 1160px;
     padding: 0 20px;
@@ -259,61 +316,115 @@
     text-underline-position: under;
     color: #666;
 }
-
 /*---------------- Content2 끝 ----------------*/
-/*---------------- Footer 영역 ----------------*/
-#footerType {
-    height: 400px;
-    background-color: #F2F2F2;
-    border-top: 2px solid #BCBABA;
-}
-  
-.footer__inner {
-    width: 260px;
-    margin: 0 auto;
-    padding: 100px 20px 64px 20px;
-}
-  
-.footer__imglogo {
+
+
+/*---------------- ImgUpload 영역 ----------------*/
+#image_box {
+    width: 100%;
+    height: 900px;
     display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
+    justify-content: center;
+  }
+  
+.ctn1 {
+width: 78.99%;
+height: auto;
+display: flex;
+flex-direction: column;
 }
-    
-.footer__image.img1 {
-        background: url(./image/youtube.png) no-repeat center / cover;
+
+.con11 {
+width: 100%;
+height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
-.footer__image.img2 {
-        background: url(./image/twitter.png) no-repeat center / cover;
+
+.img_form{
+width: 100%;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
-.footer__image.img3 {
-        background: url(./image/instargram.png) no-repeat center / cover;
+
+.button {
+    display: flex;
+    justify-content: center;
 }
-    
-.footer__image {
-    width: 64px;
-    height: 64px;
-    color: #fff;
-    border-radius: 50px;
+
+label {
+    cursor: pointer;
+    font-size: 1em;
 }
-    
-.footer__about {
-    text-align: center;
+
+#chooseFile {
+    visibility: hidden;
 }
-    
-.famous_saying {
-    margin-top: 60px;
+
+.fileInput {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px black;
+    width: 60%;
+    height: 30px;
 }
-    
-.team_name {
-    margin: 20px 0;
+
+#fileName {
+    margin-left: 5px;
 }
-    
-.copy {
-    font-size: 11px;
+
+.con22 {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/*---------------- Footer 끝 ----------------*/
-/*---------------- Myr 영역 ----------------*/
+
+.img_cnt {
+    width: 75%;
+    height: 600px;
+}
+
+.con22 img{
+    width: auto; 
+    height: auto;
+}
+
+.con33 {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.con33 form {
+    width: 15%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 30px;
+}
+
+#butcnt {
+    visibility: hidden;
+}
+
+.butcnt {
+    width: auto;
+    height: auto;
+    font-size: 1.5em;
+    padding: 10px;
+}
+/*---------------- ImgUpload 끝 ----------------*/
+
+
+/*---------------- ImgUpload2 영역 ----------------*/
 #Img_result {
     width: 100%;
     height: 500px;
@@ -383,4 +494,77 @@
     font-size: 2em;
     cursor: pointer;
 }
+/*---------------- ImgUpload2 끝 ----------------*/
+
+
+/*---------------- Myr 영역 ----------------*/
+#fridge {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .fridge_ctn {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .fridge_empty {
+    width: 83.334%;
+    height: 50px;
+  }
+  
+  .fridge_img {
+    width: 83.334%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  
+  .fridge_material {
+    width: 192px;
+    height: 144px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fridge_material img{
+    width:168px; 
+    height: 110px;
+  }
+  
+  .cont2 {
+    width: 83.334%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .recipe {
+    width: 15%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
 /*---------------- Myr 끝 ----------------*/
+
+
+/*---------------- Myr2 영역 ----------------*/
+
+/*---------------- Myr2 끝 ----------------*/
