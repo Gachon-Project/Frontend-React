@@ -1,8 +1,15 @@
-import React, {Component} from 'react';
+import React, { useState } from "react";
 
-class ImgUpload extends Component {
-    render() {
-      return(
+function ImgUpload() {
+    const [fileImage, setFileImage] = useState("");
+    const [fileName, setFileName] = useState("")
+    // 파일 저장
+    const saveFileImage = (e) => {
+        setFileImage(URL.createObjectURL(e.target.files[0]));
+        setFileName(e.target.files[0].name);
+    };
+
+    return(
         <section id="image_box">
             <div class="ctn1">
                 <div class="con11">
@@ -13,31 +20,26 @@ class ImgUpload extends Component {
                                 👉 CLICK HERE! 👈
                                 </label>
                             </div>
-                            <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="readURL(this);"></input>
+                            <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onChange={saveFileImage}></input>
                         </form>
                         <div class="fileInput">
-                            <p>FILE NAME: </p>
-                            <p id="fileName"></p>
+                            <p>FILE NAME: {fileName}</p>
                         </div>
                     </div>
                 </div>
                 <div class="con22">
                     <div class="img_cnt">
-                        <img alt=""></img>
+                        <img src={fileImage}></img>
                     </div>
                 </div>
                 <div class="con33">
                     <form>
-                        <label for="butcnt">
-                            저장
-                        </label>
-                        <input id="butcnt" class="butcnt" type="button" name="submitButton" value="저장"></input>
+                        <a href="/img2">저장</a>
                     </form>
                 </div>
             </div>
         </section>
-      );
-    }
-  }
+    );
+}
 
   export default ImgUpload;

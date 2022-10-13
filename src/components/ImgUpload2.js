@@ -1,35 +1,22 @@
-import React, {Component} from 'react';
-
-class ImgUpload2 extends Component {
-    render() {
-      return(
-        <section id="Img_result">
-          <div class="ctn">
-            <div class="con1">
-            </div>
-            <div class="con2">
-              <div class="Img_dvs">
-                <div class="Img_col">
-                  <img className='Img'></img>
-                  <p>[음식이름]</p>
-                </div>
-                <div class="Img_col">
-                  <img className='Img'></img>
-                  <p>[음식이름]</p>
-                </div>
-                <div class="Img_col">
-                  <img className='Img'></img>
-                  <p>[음식이름]</p>
-                </div>
-              </div>
-            </div>
-            <div class="con3">
-              <a href="/" class="buttonContainer">냉장고 넣기</a>
+function ImgUpload2() {
+  return(
+    <section id="Img_result">
+      <div class="ctn">
+        <div class="con1">
+        </div>
+        <div class="con2">
+          <div class="Img_dvs">
+            <div class="Img_col">
+              <p>[음식이름]</p>
             </div>
           </div>
-        </section>
-      );
-    }
-  }
+        </div>
+        <div class="con3">
+          <a href="/" class="buttonContainer">냉장고 넣기</a>
+        </div>
+      </div>
+    </section>
+  );
+}
 
-  export default ImgUpload2;
+export default ImgUpload2;
