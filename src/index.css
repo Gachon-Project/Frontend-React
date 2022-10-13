@@ -1,0 +1,386 @@
+/*---------------- Header 영역 ----------------*/
+#header {
+    height: 100px;
+}
+  
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+  
+.container1 {
+    width: 1050px;
+    height: inherit;
+    margin: 0 auto;
+}
+
+.header__empty {
+    width: 37.5%;
+}
+  
+.header__logo {
+    width: 25%;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.header__menu {
+    width: 37.5%;
+    text-align: right;
+}
+  
+.header__menu li {
+    display: inline;
+ }
+  
+.header__menu li a {
+    padding: 5px 15px;
+    margin: 0 5px;
+    transition: background-color 0.33s;
+    font-size: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+  
+.header__menu li a:hover {
+    background-color: #F1F1F1;
+    border-radius: 5px;
+}
+
+
+/*---------------- Nav 영역 ----------------*/
+#nav {
+    height: 70px;
+    border-bottom: 1px solid #BCBABA;
+}
+  
+.nav__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+  
+.nav__menu {
+    width: 80%;
+    text-align: center;
+}
+  
+.nav__menu li {
+    display: inline;
+} 
+  
+.nav__menu li a {
+    padding: 13px 30px;
+    margin: 0 53px;
+    transition: background-color 0.33s;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+}
+  
+.nav__menu li a:hover {
+    background-color: #F1F1F1;
+    border-radius: 5px;
+}
+
+/*---------------- Content1 영역 ----------------*/
+.slider {
+    position: relative;
+}
+
+.slider__img {
+    background: url(image/slider.jpg) no-repeat center center / cover;
+}
+
+.slider__img .desc {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+.slider__img .desc span {
+    font-size: 16px;
+    background-color: #fff;
+    padding: 1px 14px 0 14px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.slider__img .desc h3 {
+    font-size: 110px;
+    font-weight: 300;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    margin-left: -8px;
+}
+
+.slider__img .desc p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.35;
+    margin-bottom: 130px;
+}
+
+.slider__img .desc .btn a {
+    font-size: 16px;
+    background: black;
+    padding: 11px 50px;
+    display: inline-block;
+    color: white;
+}
+
+/*---------------- Content2 영역 ----------------*/
+
+/* common */
+.container {
+    width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.section {
+    padding: 120px 0;
+}
+.section h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.section span {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: underline;
+    margin-bottom: 14px;
+}
+
+/* textType */
+.text__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.text {
+    width: 32%;
+    margin-bottom: 2%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+.text:hover {
+    background: #F5F5F5;
+}
+.text__title {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 10px;
+    position: relative;
+}
+
+.pork {
+    width: 64px;
+    height: 64px;
+    background: url(image/pork.png);
+    border-radius: 30px;
+}
+
+.cow {
+    width: 64px;
+    height: 64px;
+    background: url(image/cow.png);
+    border-radius: 30px;
+}
+
+.chicken {
+    width: 64px;
+    height: 64px;
+    background: url(image/chicken.png);
+    border-radius: 30px;
+}
+
+.fish {
+    width: 64px;
+    height: 64px;
+    background: url(image/fish.png);
+    border-radius: 30px;
+}
+
+.shrimp {
+    width: 64px;
+    height: 64px;
+    background: url(image/shrimp.png);
+    border-radius: 30px;
+}
+
+.noodle {
+    width: 64px;
+    height: 64px;
+    background: url(image/noodle.png);
+    border-radius: 30px;
+}
+
+
+.text__desc {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    color: #666;
+}
+.text__btn {
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #666;
+}
+
+/*---------------- Content2 끝 ----------------*/
+/*---------------- Footer 영역 ----------------*/
+#footerType {
+    height: 400px;
+    background-color: #F2F2F2;
+    border-top: 2px solid #BCBABA;
+}
+  
+.footer__inner {
+    width: 260px;
+    margin: 0 auto;
+    padding: 100px 20px 64px 20px;
+}
+  
+.footer__imglogo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+    
+.footer__image.img1 {
+        background: url(./image/youtube.png) no-repeat center / cover;
+}
+.footer__image.img2 {
+        background: url(./image/twitter.png) no-repeat center / cover;
+}
+.footer__image.img3 {
+        background: url(./image/instargram.png) no-repeat center / cover;
+}
+    
+.footer__image {
+    width: 64px;
+    height: 64px;
+    color: #fff;
+    border-radius: 50px;
+}
+    
+.footer__about {
+    text-align: center;
+}
+    
+.famous_saying {
+    margin-top: 60px;
+}
+    
+.team_name {
+    margin: 20px 0;
+}
+    
+.copy {
+    font-size: 11px;
+}
+/*---------------- Footer 끝 ----------------*/
+/*---------------- Myr 영역 ----------------*/
+#Img_result {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.ctn {
+    width: 78.99%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.con1 {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.con2 {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Img_dvs {
+    display: flex;
+    width: 85%;
+    height: 300px;
+    justify-content: center;
+}
+
+.Img_col {
+    width: 33%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Img_col img {
+    width: 90%; 
+    height: 250px;
+}
+
+.con3 {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonContainer {
+    width: 15%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 2em;
+    cursor: pointer;
+}
+/*---------------- Myr 끝 ----------------*/
