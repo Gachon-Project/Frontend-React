@@ -15,7 +15,10 @@ class Content1 extends Component {
                     남은 재료로 만들 수 있는 레시피를 확인하세요!
                   </p>
                   <div class="btn">
-                    <a href="/">자세히 보기</a>
+                    <a href="/"onClick={function(e){
+                      e.preventDefault();
+                      this.props.onChangeMode('imgupload')
+                    }.bind(this)}>자세히 보기</a>
                   </div>
                 </div>
               </div>
