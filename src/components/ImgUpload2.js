@@ -12,7 +12,9 @@ function ImgUpload2() {
           </div>
         </div>
         <div class="con3">
-          <a href="/" class="buttonContainer">냉장고 넣기</a>
+          <a href="/" class="buttonContainer" onClick={function(e){
+            alert("냉장고 저장 완료!");
+          }}>냉장고 넣기</a>
         </div>
       </div>
     </section>
