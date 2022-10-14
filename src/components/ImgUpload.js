@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from "react";
 
 function ImgUpload() {
@@ -7,6 +8,18 @@ function ImgUpload() {
     const saveFileImage = (e) => {
         setFileImage(URL.createObjectURL(e.target.files[0]));
         setFileName(e.target.files[0].name);
+        // if(e.target.files[0]){
+        //     const img = new FormData();
+        //     img.append("file", e.target.files[0]);
+        //     axios
+        //         .post("주소값", img)
+        //         .then((res) => {
+        //             setFileImage(res.data);
+        //         })
+        //         .catch((err) => {
+        //             console.error(err);
+        //         });
+        // }
     };
 
     return(
@@ -20,7 +33,7 @@ function ImgUpload() {
                                 👉 CLICK HERE! 👈
                                 </label>
                             </div>
-                            <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onChange={saveFileImage}></input>
+                            <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onChange={(e) => saveFileImage(e)}></input>
                         </form>
                         <div class="fileInput">
                             <p>FILE NAME: {fileName}</p>
