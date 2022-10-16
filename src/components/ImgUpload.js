@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { useState } from "react";
 
 function ImgUpload() {
@@ -8,20 +7,8 @@ function ImgUpload() {
     const saveFileImage = (e) => {
         setFileImage(URL.createObjectURL(e.target.files[0]));
         setFileName(e.target.files[0].name);
-        // if(e.target.files[0]){
-        //     const img = new FormData();
-        //     img.append("file", e.target.files[0]);
-        //     axios
-        //         .post("주소값", img)
-        //         .then((res) => {
-        //             setFileImage(res.data);
-        //         })
-        //         .catch((err) => {
-        //             console.error(err);
-        //         });
-        // }
     };
-
+    
     return(
         <section id="image_box">
             <div class="ctn1">
@@ -42,7 +29,7 @@ function ImgUpload() {
                 </div>
                 <div class="con22">
                     <div class="img_cnt">
-                        <img src={fileImage}></img>
+                        <img src={fileImage} alt=""></img>
                     </div>
                 </div>
                 <div class="con33">
