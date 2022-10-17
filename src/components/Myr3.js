@@ -10,7 +10,7 @@ const StyledImg = styled.img.attrs({
   height: 110px;
 `;
 
-function Myr2() {
+function Myr3() {
   const [users, setUsers] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -56,4 +56,4 @@ function Myr2() {
   );
 }
 
-export default Myr2;
+export default Myr3;
