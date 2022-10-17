@@ -1,14 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import styled from 'styled-components';
-import smileImg from "../image/youtube.png";
-
-const StyledImg = styled.img.attrs({
-  src: `${smileImg}`,
-})`
-  width: 168px; 
-  height: 110px;
-`;
 
 function Myr() {
   const [users, setUsers] = useState(null);
@@ -45,8 +36,11 @@ function Myr() {
         <div class="fridge_empty"></div>
         <div class="fridge_img">
         {users.map(user => (
-          <div class="fridge_material">    
-            <StyledImg></StyledImg>
+          <div key={user.INGREDIENTS_ID}class="fridge_material">   
+            <img 
+              src={`ingredients/${user.INGREDIENTS_ID}.jpg`}
+              alt=""
+            />
             <p>[{user.INGREDIENTS_NAME}]</p>
           </div>
         ))}
