@@ -39,7 +39,7 @@ function Myr2() {
         // loading 상태를 true 로 바꿉니다.
         setLoading2(true);
         const response = await axios.get(
-          'http://43.200.238.225:8000/recipesReplace'
+          'http://43.200.238.225:8000/recipes-Replace'
         );
         setUsers2(response.data); // 데이터는 response.data 안에 들어있습니다.
       } catch (e) {
@@ -51,8 +51,31 @@ function Myr2() {
   }, []);
 
 
-  if (loading1 || loading2) return <div>로딩중..</div>;
-  if (error1 || error2) return <div>에러가 발생했습니다</div>;
+  if (loading1 || loading2) {
+    return (
+      <section id="fridge2">
+        <div class="fridge_ctn2">
+          <div class="fridge_empty2"></div>
+          <div class="fridge_img2">
+            <div>로딩중..</div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+  if (error1 || error2) {
+    return (
+      <section id="fridge2">
+        <div class="fridge_ctn2">
+          <div class="fridge_empty2"></div>
+          <div class="fridge_img2">
+            <div>에러가 발생했습니다</div>
+          </div>
+          <div class="fridge_empty2"></div>
+        </div>
+      </section>
+    );
+  }
   if (!users1 || !users2) return null;
   return(
     <section id="fridge2">
@@ -80,6 +103,7 @@ function Myr2() {
             <p>[{user.FOOD_NAME}]</p>
           </div>
         ))}
+        <div class="fridge_empty2"></div>
         </div>
       </div>
     </section>

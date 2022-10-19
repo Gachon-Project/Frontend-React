@@ -17,6 +17,7 @@ function Myr() {
         const response = await axios.get(
           'http://43.200.238.225:8000/ingredients'
         );
+        console.log(response.data.INGREDIENTS_ENG_NAME);
         setUsers(response.data); // 데이터는 response.data 안에 들어있습니다.
       } catch (e) {
         setError(e);
@@ -27,8 +28,36 @@ function Myr() {
     fetchUsers();
   }, []);
 
-  if (loading) return <div>로딩중..</div>;
-  if (error) return <div>에러가 발생했습니다</div>;
+  if (loading) {
+    return (
+      <section id="fridge">
+        <div class="fridge_ctn">
+          <div class="fridge_empty"></div>
+          <div class="fridge_img">
+            <div>로딩중..</div>
+          </div>
+          <div class="cont2">
+            <a href="/myr2">레시피 확인</a>
+          </div>
+        </div>
+      </section>
+    );
+  }
+  if (error) {
+    return (
+      <section id="fridge">
+        <div class="fridge_ctn">
+          <div class="fridge_empty"></div>
+          <div class="fridge_img">
+            <div>에러가 발생했습니다</div>
+          </div>
+          <div class="cont2">
+            <a href="/myr2">레시피 확인</a>
+          </div>
+        </div>
+      </section>
+    );
+  }
   if (!users) return null;
   return (
     <section id="fridge">
@@ -38,7 +67,7 @@ function Myr() {
         {users.map(user => (
           <div key={user.INGREDIENTS_ID}class="fridge_material">   
             <img 
-              src={`ingredients/${user.INGREDIENTS_ID}.jpg`}
+              src={`ingredients/${user.INGREDIENTS_ENG_NAME}.jpg`}
               alt=""
             />
             <p>[{user.INGREDIENTS_NAME}]</p>

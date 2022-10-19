@@ -398,11 +398,16 @@ label {
 .con33 {
     height: 100px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.con33 form {
+#postFile {
+    visibility: hidden;
+}
+
+.con33 label {
     width: 100px;
     height: 50px;
     display: flex;
@@ -410,17 +415,6 @@ label {
     align-items: center;
     border: 2px solid;
     border-radius: 30px;
-}
-
-#butcnt {
-    visibility: hidden;
-}
-
-.butcnt {
-    width: auto;
-    height: auto;
-    font-size: 1.5em;
-    padding: 10px;
 }
 /*---------------- ImgUpload 끝 ----------------*/
 
@@ -460,6 +454,7 @@ label {
     width: 85%;
     height: 300px;
     justify-content: center;
+    align-items: center;
 }
 
 .Img_col {
