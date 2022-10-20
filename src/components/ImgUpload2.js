@@ -16,7 +16,7 @@ function ImgUpload2() {
         // loading 상태를 true 로 바꿉니다.
         setLoading(true);
         const response = await axios.get(
-          'http://43.200.238.225:8000/ingredients'
+          'http://43.200.238.225:8000/ingredients-flask'
         );
         setUsers(response.data); // 데이터는 response.data 안에 들어있습니다.
       } catch (e) {
@@ -78,9 +78,9 @@ function ImgUpload2() {
         <div class="con2">
           <div class="Img_dvs">
           {users.map(user => (
-            <div class="Img_col">    
+            <div key={user.INGREDIENTS_ID} class="Img_col">    
               <img 
-              src={`ingredients/${user.INGREDIENTS_ID}.jpg`}
+              src={`ingredients/${user.INGREDIENTS_ENG_NAME}.jpg`}
               alt=""
               />
               <p>[{user.INGREDIENTS_NAME}]</p>
