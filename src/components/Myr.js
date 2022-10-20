@@ -65,7 +65,7 @@ function Myr() {
         <div class="fridge_empty"></div>
         <div class="fridge_img">
         {users.map(user => (
-          <div key={user.INGREDIENTS_ID}class="fridge_material">   
+          <div key={user.INGREDIENTS_ID} class="fridge_material">   
             <img 
               src={`ingredients/${user.INGREDIENTS_ENG_NAME}.jpg`}
               alt=""
