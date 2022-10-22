@@ -6,7 +6,7 @@ class ImgUpload extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            ingredients: "",
+            ingredients: '',
             fileName : '',
             previewURL : ''
         };
