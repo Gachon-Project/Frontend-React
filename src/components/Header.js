@@ -6,9 +6,6 @@ function Header() {
         </div>
         <div class="header__logo">
           <a href="/">
-            <p>
-              Data <br></br>Shredder
-            </p>
           </a>
         </div>
         <div class="header__empty">

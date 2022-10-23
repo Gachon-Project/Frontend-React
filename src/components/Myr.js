@@ -37,7 +37,7 @@ function Myr() {
             <div>로딩중..</div>
           </div>
           <div class="cont2">
-            <a href="/myr2">레시피 확인</a>
+            <a href="/myr2" class="recipe">레시피 확인</a>
           </div>
         </div>
       </section>
@@ -52,7 +52,7 @@ function Myr() {
             <div>에러가 발생했습니다</div>
           </div>
           <div class="cont2">
-            <a href="/myr2">레시피 확인</a>
+            <a href="/myr2" class="recipe">레시피 확인</a>
           </div>
         </div>
       </section>
@@ -75,7 +75,7 @@ function Myr() {
         ))}
         </div>
         <div class="cont2">
-          <a href="/myr2">레시피 확인</a>
+          <a href="/myr2" class="recipe">레시피 확인</a>
         </div>
       </div>
     </section>
