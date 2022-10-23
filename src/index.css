@@ -1,6 +1,6 @@
 /*---------------- Header 영역 ----------------*/
 #header {
-    height: 100px;
+    height: 175px;
 }
   
 .header__inner {
@@ -20,7 +20,7 @@
   
 .header__logo {
     width: 25%;
-    height: 100px;
+    height: 175px;
     text-align: center;
     font-size: 30px;
     font-weight: 700;
@@ -30,30 +30,11 @@
     align-items: center;
     justify-content: center;
 }
-  
-.header__menu {
-    width: 37.5%;
-    text-align: right;
-}
-  
-.header__menu li {
-    display: inline;
- }
-  
-.header__menu li a {
-    padding: 5px 15px;
-    margin: 0 5px;
-    transition: background-color 0.33s;
-    font-size: 15px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-}
-  
-.header__menu li a:hover {
-    background-color: #F1F1F1;
-    border-radius: 5px;
+
+.header__logo a {
+    width: 100%;
+    height: 100%;
+    background: url(./image/logo13.png) no-repeat center / cover;
 }
 /*---------------- Header 끝 ----------------*/
 
@@ -67,7 +48,7 @@
 .nav__inner {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
   
 .nav__menu {
@@ -101,15 +82,18 @@
 
 /*---------------- Footer 영역 ----------------*/
 #footerType {
-    height: 400px;
+    height: 360px;
     background-color: #F2F2F2;
     border-top: 2px solid #BCBABA;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
   
 .footer__inner {
     width: 260px;
     margin: 0 auto;
-    padding: 100px 20px 64px 20px;
+    padding: 80px 20px 44px 20px;
 }
   
 .footer__imglogo {
@@ -149,6 +133,20 @@
     
 .copy {
     font-size: 11px;
+}
+
+#footerType .bnt {
+    width: 64px;
+    height: 64px;
+    border-radius: 50px;
+    background: url(image/topbutton3.png)no-repeat center center / cover;
+    margin: 10px;
+}
+
+#footerType .topbutton {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
 }
 /*---------------- Footer 끝 ----------------*/
 
@@ -325,7 +323,7 @@
     height: auto;
     display: flex;
     justify-content: center;
-  }
+}
   
 .ctn1 {
 width: 78.99%;
@@ -532,6 +530,7 @@ label {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 25px 0;
 }
   
 .fridge_material {
@@ -550,7 +549,7 @@ label {
   
 .cont2 {
     width: 83.334%;
-    height: 50px;
+    height: 70px;
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
@@ -558,15 +557,14 @@ label {
 
 .recipe {
     width: 15%;
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid;
     border-radius: 30px;
-    padding: 10px;
-    font-size: 1.5em;
-    cursor: pointer;
+    padding: 5px;
+    font-size: 1.2em;
 }
 /*---------------- Myr 끝 ----------------*/
 
