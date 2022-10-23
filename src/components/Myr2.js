@@ -59,6 +59,7 @@ function Myr2() {
           <div class="fridge_img2">
             <div>로딩중..</div>
           </div>
+          <div class="fridge_empty2"></div>
         </div>
       </section>
     );
