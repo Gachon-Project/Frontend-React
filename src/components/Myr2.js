@@ -56,7 +56,7 @@ function Myr2() {
       <section id="fridge2">
         <div class="fridge_ctn2">
           <div class="fridge_empty2"></div>
-          <div class="fridge_img2">
+          <div class="fridge_loading">
             <div>로딩중..</div>
           </div>
           <div class="fridge_empty2"></div>
@@ -69,7 +69,7 @@ function Myr2() {
       <section id="fridge2">
         <div class="fridge_ctn2">
           <div class="fridge_empty2"></div>
-          <div class="fridge_img2">
+          <div class="fridge_error">
             <div>에러가 발생했습니다</div>
           </div>
           <div class="fridge_empty2"></div>
@@ -89,7 +89,7 @@ function Myr2() {
               src={`food/${user.FOOD_ID}.jpg`}
               alt=""
             />
-            <p>[{user.FOOD_NAME}]</p>
+            <p>{user.FOOD_NAME}</p>
           </div>
         ))}
         </div>
@@ -101,7 +101,7 @@ function Myr2() {
               src={`food/${user.FOOD_ID}.jpg`}
               alt=""
             />
-            <p>[{user.FOOD_NAME}]</p>
+            <p>{user.FOOD_NAME}</p>
           </div>
         ))}
         <div class="fridge_empty2"></div>

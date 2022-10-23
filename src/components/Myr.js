@@ -70,7 +70,7 @@ function Myr() {
               src={`ingredients/${user.INGREDIENTS_ENG_NAME}.jpg`}
               alt=""
             />
-            <p>[{user.INGREDIENTS_NAME}]</p>
+            <p>{user.INGREDIENTS_NAME}</p>
           </div>
         ))}
         </div>

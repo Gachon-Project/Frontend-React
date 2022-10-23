@@ -12,7 +12,7 @@ function Content1(){
                 남은 재료로 만들 수 있는 레시피를 확인하세요!
               </p>
               <div class="btn">
-                <a href="/img">자세히 보기</a>
+                <a href="/img">재료 넣기</a>
               </div>
             </div>
           </div>
