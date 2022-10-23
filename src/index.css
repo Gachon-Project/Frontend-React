@@ -381,6 +381,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 30px 0;
 }
 
 .img_cnt {
@@ -531,6 +532,7 @@ label {
     flex-wrap: wrap;
     justify-content: center;
     padding: 25px 0;
+    margin: 60px 0;
 }
   
 .fridge_material {
@@ -588,7 +590,7 @@ label {
 
 .fridge_empty2 {
     width: 83.334%;
-    height: 50px;
+    height: 75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -608,6 +610,7 @@ label {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 80px 0;
 }
 
 .fridge_material2 {
