@@ -157,43 +157,49 @@
 }
 
 .slider__img {
-    background: url(image/slider.jpg) no-repeat center center / cover;
+    background: url(image/slider1.jpg) no-repeat center center / cover;
 }
 
 .slider__img .desc {
-    width: 1160px;
+    width: 1200px;
     margin: 0 auto;
     padding: 100px 20px;
 }
 
 .slider__img .desc span {
-    font-size: 16px;
-    background-color: #fff;
-    padding: 1px 14px 0 14px;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'caveat';
+    padding: 0 14px 0 14px;
     border-radius: 30px;
     text-transform: uppercase;
-    margin-bottom: 10px;
     display: inline-block;
+    color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
 .slider__img .desc h3 {
-    font-size: 110px;
-    font-weight: 300;
+    font-size: 120px;
+    font-family: "caveat-brush";
     line-height: 1;
     text-transform: uppercase;
     margin-bottom: 16px;
     margin-left: -8px;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
 
 .slider__img .desc p {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 700;
     line-height: 1.35;
-    margin-bottom: 130px;
+    margin-bottom: 110px;
+    color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
 .slider__img .desc .btn a {
     font-size: 16px;
+    border-radius: 50px;
     background: black;
     padding: 11px 50px;
     display: inline-block;
@@ -646,3 +652,76 @@ label {
     height: 110px;
 }
 /*---------------- Myr2 끝 ----------------*/
+
+/*---------------- Myr3 영역 ----------------*/
+#fridge3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+  
+.fridge_ctn3 {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fridge_empty3 {
+    width: 83.334%;
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fridge_loading {
+    width: 83.334%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.fridge_error {
+    width: 83.334%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.fridge_img3 {
+    width: 83.334%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 80px 0;
+}
+
+.fridge_material3 {
+    width: 242px;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+}
+
+.fridge_material3 img{
+    width: 214px; 
+    height: 144px;
+}
+
+.fridge_material3 p{
+    font-size: 20px;
+}
+
+/*---------------- Myr3 끝 ----------------*/

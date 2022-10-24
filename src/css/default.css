@@ -1,0 +1,11 @@
+/* font */
+
+@font-face {
+    font-family: "caveat";
+    src: url("./font/Caveat-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "caveat-brush";
+    src: url("./font/CaveatBrush-Regular.ttf");
+}
