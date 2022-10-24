@@ -31,7 +31,7 @@ class ImgUpload extends React.Component {
         e.preventDefault();
         const data = new FormData();
         data.append('file', this.uploadInput.files[0]);
-        fetch('http://121.170.222.30:5000/predict', { method: 'POST', body: data })
+        fetch('http://192.168.45.133:5000/predict', { method: 'POST', body: data })
         .then((response) => { response.json().then((body) => { 
             this.setState({ 
                 ingredients: `${body}`
