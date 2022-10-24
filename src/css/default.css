@@ -9,3 +9,8 @@
     font-family: "caveat-brush";
     src: url("./font/CaveatBrush-Regular.ttf");
 }
+
+@font-face {
+    font-family: "kaushan";
+    src: url("./font/KaushanScript-Regular.ttf");
+}
