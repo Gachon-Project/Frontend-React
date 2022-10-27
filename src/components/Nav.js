@@ -13,6 +13,9 @@ function Nav() {
             <li>
               <a href="/recipe">레시피</a>
             </li>
+            <li>
+              <a href="/mart">마트검색</a>
+            </li>
           </ul>
         </div>
       </div>
