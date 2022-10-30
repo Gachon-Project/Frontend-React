@@ -62,7 +62,7 @@
   
 .nav__menu li a {
     padding: 13px 30px;
-    margin: 0 53px;
+    margin: 0 48px;
     transition: background-color 0.33s;
     color: black;
     font-family: 'Inter';
@@ -327,6 +327,18 @@
 }
 /*---------------- Content2 끝 ----------------*/
 
+/*---------------- Ads 영역 ----------------*/
+.ads_second {
+    display: flex;
+    flex-direction: row;
+    margin: 10 30;
+    padding: 30px;
+}
+.ads_second > a > img{
+    width: 230px;
+    margin: 50px 50px;
+}
+/*---------------- Ads 끝 ----------------*/
 
 /*---------------- ImgUpload 영역 ----------------*/
 #image_box {
@@ -335,7 +347,7 @@
     display: flex;
     justify-content: center;
 }
-  
+
 .ctn1 {
 width: 78.99%;
 height: auto;
