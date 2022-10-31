@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 
-function Myr2() {
+function Myr3() {
   const [users1, setUsers1] = useState(null);
   const [loading1, setLoading1] = useState(false);
   const [error1, setError1] = useState(null);
 
+  const params = useParams();
   useEffect(() => {
     const fetchUsers1 = async () => {
       try {
@@ -15,9 +16,12 @@ function Myr2() {
         setUsers1(null);
         // loading 상태를 true 로 바꿉니다.
         setLoading1(true);
+        const id = params.foodId;
+        console.log(id);
         const response = await axios.get(
-          'http://43.200.238.225:8000/recipes'
+          `http://43.200.238.225:8000/ingredients-exact/${id}`
         );
+        console.log(response.data);
         setUsers1(response.data); // 데이터는 response.data 안에 들어있습니다.
       } catch (e) {
         setError1(e);
@@ -39,8 +43,9 @@ function Myr2() {
         setUsers2(null);
         // loading 상태를 true 로 바꿉니다.
         setLoading2(true);
+        const id = params.foodId;
         const response = await axios.get(
-          'http://43.200.238.225:8000/recipes-Replace'
+          `http://43.200.238.225:8000/recipes/${id}`
         );
         setUsers2(response.data); // 데이터는 response.data 안에 들어있습니다.
       } catch (e) {
@@ -78,42 +83,42 @@ function Myr2() {
       </section>
     );
   }
-  if (!users1 || !users2) return null;
+  if (!users1 ||!users2) return null;
   return(
-    <section id="fridge2">
-      <div class="fridge_ctn2">
-        <div class="fridge_empty2"></div>
-        <div class="fridge_img2">
-        {users1.map(user => (
-          <Link to={`/myr2/${user.FOOD_ID}`}>
-            <div key={user.FOOD_ID} class="fridge_material2">    
-              <img 
-                src={`food/${user.FOOD_ID}.jpg`}
-                alt=""
-              />
-              <p>{user.FOOD_NAME}</p>
-            </div>
-          </Link>
-        ))}
+    <section id="recipe">
+      <div class="ca">
+        <div class="c1">
+          <div key={users1[0].FOOD_ID} class="food">  
+            <img src={`../food/${users1[0].FOOD_ID}.jpg`} alt=""></img>
+            <p>{users1[0].FOOD_NAME}</p>
+          </div>
         </div>
-        <div class="fridge_empty2"><hr></hr><span>대체 식품</span></div>
-        <div class="fridge_img2">
-        {users2.map(user => (
-          <Link to={`/myr2/${user.FOOD_ID}`}>
-            <div key={user.FOOD_ID} class="fridge_material2">    
-              <img 
-                src={`food/${user.FOOD_ID}.jpg`}
-                alt=""
-              />
-              <p>{user.FOOD_NAME}</p>
-            </div>
-          </Link>
-        ))}
-        <div class="fridge_empty2"></div>
+        <div class="c2">
+          <div class="wofy">
+            <table>
+              <tr>
+                <th>재료명</th>
+                <th>재료용량</th>
+              </tr>
+              {users1.map(user => (
+                <tr key={user.FOOD_ID}>
+                  <td>{user.INGREDIENTS_NAME}</td>
+                  <td>{user.INGREDIENTS_AMOUNT}</td>
+                </tr>
+              ))}
+            </table>
+          </div>
+          <div class="tnstj">
+            <ul>
+            {users2.map(user => (
+              <li key={user.FOOD_ID}>{user.ORDER}. {user.DETAIL}</li>
+            ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
   );
 }
 
-export default Myr2;
+export default Myr3;
