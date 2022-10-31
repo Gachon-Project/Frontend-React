@@ -328,15 +328,31 @@
 /*---------------- Content2 끝 ----------------*/
 
 /*---------------- Ads 영역 ----------------*/
-.ads_second {
+#ads {
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: row;
-    margin: 10 30;
-    padding: 30px;
+    justify-content: center;
+}
+.ads__inner_container1 {
+    width: 1400px;
+    height: auto;
+}
+.ads_first {
+    width: 1400px;
+    height: 420px;
+    margin-bottom: 40px;
+}
+.ads_second {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 .ads_second > a > img{
-    width: 230px;
-    margin: 50px 50px;
+    width: 300px;
+    height: 250px;
+    margin: 20px 20px;
 }
 /*---------------- Ads 끝 ----------------*/
 
@@ -727,13 +743,28 @@ label {
     align-content: flex-start;
 }
 
-.wofy table {
-    width: 50%;
-    text-align: center;
+.wofy .tbwofy {
+  border-collapse: separate;
+  border-spacing: 1px;
+  text-align: center;
+  line-height: 1.5;
+  margin: 20px 50px;
 }
 
-.wofy table, th, td {
-    border: 1px solid;
+.tbwofy th {
+  width: 155px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  color: #fff;
+  background: #778899;
+}
+.tbwofy td {
+  width: 155px;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  background: #eee;
 }
 
 .tnstj {
@@ -743,8 +774,16 @@ label {
     justify-content: center;
 }
 
+.tnstj ul {
+  max-width: 650px;
+  width: 100%;
+}
+
 .tnstj ul li {
-    font-size: 22px;
-    margin-bottom: 10px;
+  padding: 5px 0px 5px 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #efefef;
+  font-size: 22px;
+  letter-spacing: -1px;
 }
 /*---------------- Myr3 끝 ----------------*/

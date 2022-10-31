@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function Recipe() {
   const [users, setUsers] = useState(null);
@@ -59,13 +60,15 @@ function Recipe() {
       <div class="fridge_ctn3">
         <div class="fridge_img3">
         {users.map(user => (
-          <div key={user.FOOD_ID} class="fridge_material3">    
-            <a href={`/recipe/${user.FOOD_ID}`}><img 
-              src={`food/${user.FOOD_ID}.jpg`}
-              alt=""
-            /></a>
-            <p>{user.FOOD_NAME}</p>
-          </div>
+          <Link to={`/recipe/${user.FOOD_ID}`}>
+            <div key={user.FOOD_ID} class="fridge_material2">    
+              <img 
+                src={`food/${user.FOOD_ID}.jpg`}
+                alt=""
+              />
+              <p>{user.FOOD_NAME}</p>
+            </div>
+          </Link>
         ))}
         </div>
       </div>

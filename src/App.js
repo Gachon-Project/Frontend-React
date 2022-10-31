@@ -11,7 +11,6 @@ import Myr3 from './components/Myr3';
 import ImgUpload from './components/ImgUpload';
 import ImgUpload2 from './components/ImgUpload2';
 import Recipe from './components/Recipe';
-import Recipe2 from './components/Recipe2';
 import SearchMart from './components/SearchMart';
 import Ads from './components/Ads';
 import {Routes, Route, BrowserRouter} from 'react-router-dom';
@@ -30,7 +29,7 @@ function App() {
           <Route exact path='/img' element={<ImgUpload></ImgUpload>}></Route>
           <Route exact path='/img2' element={<ImgUpload2></ImgUpload2>}></Route>
           <Route exact path='/recipe' element={<Recipe></Recipe>}></Route>
-          <Route exact path='/recipe/:id' element={<Recipe2></Recipe2>}></Route>
+          <Route exact path='/recipe/:foodId' element={<Myr3></Myr3>}></Route>
           <Route exact path='/mart' element={<SearchMart></SearchMart>}></Route>
         </Routes>
         <Footer></Footer>
