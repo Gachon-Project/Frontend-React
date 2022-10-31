@@ -95,10 +95,10 @@ function Myr3() {
         </div>
         <div class="c2">
           <div class="wofy">
-            <table>
+            <table class="tbwofy">
               <tr>
-                <th>재료명</th>
-                <th>재료용량</th>
+                <th scope="cols">재료명</th>
+                <th scope="cols">재료용량</th>
               </tr>
               {users1.map(user => (
                 <tr key={user.FOOD_ID}>
