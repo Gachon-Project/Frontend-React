@@ -10,15 +10,13 @@ function ImgUpload2() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        // 요청이 시작 할 때에는 error 와 users 를 초기화하고
         setError(null);
         setUsers(null);
-        // loading 상태를 true 로 바꿉니다.
         setLoading(true);
         const response = await axios.get(
-          'http://43.200.238.225:8000/ingredients-flask'
+          '"노드 서버 ip 주소"/ingredients-flask'
         );
-        setUsers(response.data); // 데이터는 response.data 안에 들어있습니다.
+        setUsers(response.data);
       } catch (e) {
         setError(e);
       }

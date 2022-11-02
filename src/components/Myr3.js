@@ -11,18 +11,15 @@ function Myr3() {
   useEffect(() => {
     const fetchUsers1 = async () => {
       try {
-        // 요청이 시작 할 때에는 error 와 users 를 초기화하고
         setError1(null);
         setUsers1(null);
-        // loading 상태를 true 로 바꿉니다.
         setLoading1(true);
         const id = params.foodId;
         console.log(id);
         const response = await axios.get(
-          `http://43.200.238.225:8000/ingredients-exact/${id}`
+          `"노드 서버 ip 주소"/ingredients-exact/${id}`
         );
-        console.log(response.data);
-        setUsers1(response.data); // 데이터는 response.data 안에 들어있습니다.
+        setUsers1(response.data);
       } catch (e) {
         setError1(e);
       }
@@ -38,16 +35,14 @@ function Myr3() {
   useEffect(() => {
     const fetchUsers2 = async () => {
       try {
-        // 요청이 시작 할 때에는 error 와 users 를 초기화하고
         setError2(null);
         setUsers2(null);
-        // loading 상태를 true 로 바꿉니다.
         setLoading2(true);
         const id = params.foodId;
         const response = await axios.get(
-          `http://43.200.238.225:8000/recipes/${id}`
+          `"노드 서버 ip 주소"/recipes/${id}`
         );
-        setUsers2(response.data); // 데이터는 response.data 안에 들어있습니다.
+        setUsers2(response.data);
       } catch (e) {
         setError2(e);
       }

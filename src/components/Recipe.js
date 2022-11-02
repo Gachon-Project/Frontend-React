@@ -10,15 +10,13 @@ function Recipe() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        // 요청이 시작 할 때에는 error 와 users 를 초기화하고
         setError(null);
         setUsers(null);
-        // loading 상태를 true 로 바꿉니다.
         setLoading(true);
         const response = await axios.get(
-          'http://43.200.238.225:8000/recipes'
+          '"노드 서버 ip 주소"/recipes-all'
         );
-        setUsers(response.data); // 데이터는 response.data 안에 들어있습니다.
+        setUsers(response.data);
       } catch (e) {
         setError(e);
       }
@@ -30,35 +28,35 @@ function Recipe() {
 
   if (loading) {
     return (
-      <section id="fridge3">
-        <div class="fridge_ctn3">
-          <div class="fridge_empty3"></div>
+      <section id="fridge2">
+        <div class="fridge_ctn2">
+          <div class="fridge_empty2"></div>
           <div class="fridge_loading">
             <div>로딩중..</div>
           </div>
-          <div class="fridge_empty3"></div>
+          <div class="fridge_empty2"></div>
         </div>
       </section>
     );
   }
   if (error) {
     return (
-      <section id="fridge3">
-        <div class="fridge_ctn3">
-          <div class="fridge_empty3"></div>
+      <section id="fridge2">
+        <div class="fridge_ctn2">
+          <div class="fridge_empty2"></div>
           <div class="fridge_error">
             <div>에러가 발생했습니다</div>
           </div>
-          <div class="fridge_empty3"></div>
+          <div class="fridge_empty2"></div>
         </div>
       </section>
     );
   }
   if (!users) return null;
   return(
-    <section id="fridge3">
-      <div class="fridge_ctn3">
-        <div class="fridge_img3">
+    <section id="fridge2">
+      <div class="fridge_ctn2">
+        <div class="fridge_img2">
         {users.map(user => (
           <Link to={`/recipe/${user.FOOD_ID}`}>
             <div key={user.FOOD_ID} class="fridge_material2">    
