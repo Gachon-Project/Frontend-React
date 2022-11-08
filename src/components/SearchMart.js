@@ -25,7 +25,7 @@ const SearchPlace = () => {
           onChange={onChange}
           value={inputText}
         />
-        <button className="button" type="submit">
+        <button className="button1" type="submit">
           검색
         </button>
       </form>

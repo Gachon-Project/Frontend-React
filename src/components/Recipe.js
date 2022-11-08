@@ -59,7 +59,7 @@ function Recipe() {
         <div class="fridge_img2">
         {users.map(user => (
           <Link to={`/recipe/${user.FOOD_ID}`}>
-            <div key={user.FOOD_ID} class="fridge_material2">    
+            <div key={user.FOOD_ID} class="fridge_material3">    
               <img 
                 src={`food/${user.FOOD_ID}.jpg`}
                 alt=""

@@ -57,22 +57,15 @@ class ImgUpload extends React.Component {
                         <div class="con11">
                             <div class="img_form">
                                     <div class="button">
-                                        <label for="chooseFile">
-                                        👉 CLICK HERE! 👈
-                                        </label>
+                                        <label for="chooseFile">👉 CLICK HERE! 👈</label>
                                     </div>
-                                    <input ref={(ref) => { 
-                                        this.uploadInput = ref;
-                                    }} type="file" id="chooseFile" name="chooseFile" accept="image/*" onChange={this.handleFileOnChange}></input>
-                                <div class="fileInput">
-                                    <p>FILE NAME: {this.state.fileName}</p>
-                                </div>
+                                    <input ref={(ref) => { this.uploadInput = ref;}} 
+                                    type="file" id="chooseFile" name="chooseFile" accept="image/*" onChange={this.handleFileOnChange}></input>
+                                <div class="fileInput"><p>FILE NAME: {this.state.fileName}</p></div>
                             </div>
                         </div>
                         <div class="con22">
-                            <div class="img_cnt">
-                                {profile_preview}
-                            </div>
+                            <div class="img_cnt">{profile_preview}</div>
                         </div>
                         <div class="con33">
                             <label for="postFile">저장</label>
