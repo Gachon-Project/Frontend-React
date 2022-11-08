@@ -25,7 +25,7 @@ function App() {
           <Route exact path='/' element={<><Content1></Content1><Content2></Content2><Ads></Ads></>}></Route>
           <Route exact path='/myr' element={<Myr></Myr>}></Route>
           <Route exact path='/myr2' element={<Myr2></Myr2>}></Route>
-          <Route exact path="/myr2/:foodId" element={<Myr3></Myr3>} />
+          <Route exact path="/myr2/:foodId" element={<Myr3></Myr3>}></Route>
           <Route exact path='/img' element={<ImgUpload></ImgUpload>}></Route>
           <Route exact path='/img2' element={<ImgUpload2></ImgUpload2>}></Route>
           <Route exact path='/recipe' element={<Recipe></Recipe>}></Route>

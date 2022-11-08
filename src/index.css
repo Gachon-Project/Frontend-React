@@ -748,7 +748,7 @@ label {
   border-spacing: 1px;
   text-align: center;
   line-height: 1.5;
-  margin: 20px 50px;
+  margin: 0 50px;
 }
 
 .tbwofy th {
@@ -787,3 +787,58 @@ label {
   letter-spacing: -1px;
 }
 /*---------------- Myr3 끝 ----------------*/
+
+#fridge3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+  
+.fridge_ctn3 {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fridge_empty3 {
+    width: 83.334%;
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fridge_empty3 span {
+    margin-left: 30px;
+    margin-top: 10px;
+    border: 1px solid;
+    width: fit-content;
+    padding: 5px;
+}
+
+.fridge_img3 {
+    width: 83.334%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 80px 0;
+}
+
+.fridge_material3 {
+    width: 250px;
+    height: 182px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fridge_material3 img{
+    width: 210px;
+    height: 150px;
+}
